@@ -1,0 +1,105 @@
+body{
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(purple, rgb(141, 112, 221));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.center{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalone{
+
+    font-family: Cambria;
+    font-weight: bolder;
+    font-size: 150%;
+    
+
+}
+
+.modal-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+ 
+
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.modal{
+    
+    background-color: white;
+    border-radius:10px ;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom:5px ;
+    
+}
+
+.modalform{
+
+    background-color: whitesmoke;
+    border-radius: 10px;
+    height: 400px;
+    width: 450px;
+    margin-left: 530px;
+    margin-top: 100px;
+    line-height: 25px;
+    padding-left: 35px;
+    
+    
+  
+
+}
+
+.modalbutton{
+
+    background-color: rgba(90, 120, 120, 0.918);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    
+    
+
+}
+
+/*Stackoverflow*/
+
+ul {
+    width: 70%;
+}
+ul li {
+    width: 49%;
+    display: inline-block;
+}
+
+ul li > * {
+    width: 85%;
+}
+
+.modalformbutton{
+    background-color: rgb(37, 111, 155);
+    border-radius: 5px;
+    height: 35px;
+    color: whitesmoke;
+    margin-left: 150px;
+
+}
+

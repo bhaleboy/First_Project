@@ -1,20 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Rent Calculator</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent Calculator</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
+  <link rel="stylesheet" href="newstyle.css">
+  
+ 
+ 
+</head>
+<body>
+
+  
+
+  <div class="modalform">
+
+    <u><h1>Rent Calulator</h1></u>
+  
+    <br>
+  <ul>
+    <li>
+        <label for="fname">First Name</label>
+        <input id="fname" type="text" placeholder="First Name" />
+    </li>
+     <li>
+        <label for ="lname">Last Name</label>
+        <input id="lname" type="text" placeholder="Last Name"/>
+    </li>
+    <li>
+      <label for = "mail">Email</label>
+      <input id ="mail" type="text" placeholder="Email"/>
+  </li>
+  <li>
+    <label for = "phone">Phone</label>
+    <input id = "phone" type="text" placeholder="Phone" />
+  </li>
+     <li>
+        <label for = "indate">Check In date</label>
+        <input id ="indate" type="date" />
+    </li>
+     <li>
+        <label for = "outdate">Check out date</label>
+        <input id = "outdate" type="date"  />
+    </li>
+    <li>
+      <label for = "intime">Check In Time</label>
+      <input id = "intime" type="time" />
+    </li>
+    <li>
+      <label for = "outtime">Check out Time</label>
+      <input id ="outtime" type="time" />
+    </li>
+    <li>
+      <label for ="room">Number of Rooms</label>
+      <input id = "room" type="number" placeholder="Rooms"  />
+    </li>
+    
+</ul>
+<button class ="modalformbutton">Know your rent</button>
+
+<div>
+<h2>The cost of your room is: </h2>
+</div>
+
+</div>
+     
       
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+
+
+  </div>
+
+  <div class = "modal-bg">
+
+    <div class = "modal">
+
+      <div class = "modalone">
+      
+      <h2 class = "center">Hello!</h2>
+      <h4>Welcome to Rent Calculator</h4>
+      <span class="center"><button class="modalbutton">Let's Calculate</button></span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src = "app.js"></script>l̥
+  
+</body>
 </html>
