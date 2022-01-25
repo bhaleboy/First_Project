@@ -7,7 +7,6 @@ var modalbg = document.querySelector(".modal-bg")
 modalButton.addEventListener('click', function () {
 
     modalbg.classList.add('hidden')
-    console.log("Hi")
 
 })
 
@@ -37,6 +36,9 @@ Check out after 4 pm 50% extra on Booking Charges
 // Work in Progress 
 
 function rentcalculator(){
+var fname = document.querySelector("#fname").value
+var lname = document.querySelector("#lname").value
+
 var rent = 0;
 var rentprice = 1200;  //Price of One Room
 var intime = " " + document.getElementById("intime").value  //getting the input in form of string 
@@ -48,63 +50,72 @@ var checkoutstat = new Date(outdate + outtime);
 var diffDays = parseInt((checkoutstat - checkinstat) / (1000 * 60 * 60 * 24), 10) 
 var outTime = parseFloat(outtime).toFixed(2);   //
 var inTime = parseFloat(intime);
-var roomCount = Number(document.getElementById("room").value)
+var roomCount = Number(document.getElementById("room").value) 
 
 
-if(diffDays === 0 ){
-        diffDays +=1
-    }
-    //1st
-    if(inTime < 12.00 &&  outTime < 12.00 )
-    {
-        rent += rentprice * roomCount * diffDays 
-    }
-    
-    else if (inTime <12 && outTime >12.00 && outTime <16.00 ){
-        rent += rentprice * roomCount * diffDays * 1.25
-
-    }
-
-    else if (inTime <12 && outTime > 16.00 ){
-        rent += rentprice * roomCount * diffDays * 1.50
-
-    }
-    //2nd
-    else if (inTime > 12 && inTime < 16 && outTime < 12.00 ){
-        rent += rentprice * roomCount * diffDays * 0.75
-
-    }
-
-    else if (inTime > 12 && inTime < 16 && outTime > 12.00 && outTime <16.00){
-        rent += rentprice * roomCount * diffDays * 0.75 * 1.25
-
-    }
-    else if (inTime > 12 && inTime < 16 && outTime > 16.00){
-        rent += rentprice * roomCount * diffDays * 0.75 * 1.50
-
-    }
-//3rd
-    else if (inTime > 16 && outTime < 12.00){
-        rent += rentprice * roomCount * diffDays * 0.25 
-
-    }
-    else if (inTime > 16 && outTime > 12.00 && outTime <16.00){
-        rent += rentprice * roomCount * diffDays * 0.25 *1.25
-
-    }
-    else if (inTime > 16 && outTime > 16.00){
-        rent += rentprice * roomCount * diffDays * 0.25 *1.50
-
-    }
-
-
-
-  
-document.querySelector(".answer").innerHTML = `The rent of your room is ${rent}`
-
+if(diffDays === 0){
+    diffDays +=1
 }
 
 
 
+
+    if(roomCount >= 1){
+    //1st
+    if(inTime <=12.00 &&  outTime <=12.00 )
+
+    {   
+        rent += rentprice * roomCount * diffDays 
+    }
+    
+     if (inTime < 12 && outTime >12.00 && outTime <=16.00 ){
+        rent += rentprice * roomCount * diffDays * 1.25
+
+    }
+
+     if (inTime <12 && outTime > 16.00 ){
+        rent += rentprice * roomCount * diffDays * 1.50
+
+    }
+    //2nd
+     if (inTime > 12 && inTime < 16 && outTime >= 12.00 && outTime <=16.00 ){
+        rent += rentprice * roomCount * diffDays * 0.75
+
+    }
+
+     if (inTime > 12 && inTime < 16 && outTime > 12.00 && outTime <16.00){
+        rent += rentprice * roomCount * diffDays * 0.75 * 1.25
+
+    }
+     if (inTime > 12 && inTime < 16 && outTime >= 16.00){
+        rent += rentprice * roomCount * diffDays * 0.75 * 1.50
+
+    }
+    
+//3rd
+     if (inTime >= 16 && outTime < 12.00){
+        rent += rentprice * roomCount * diffDays * 0.50
+
+    }
+     if (inTime >= 16 && outTime >= 12.00 && outTime <=16.00){
+        rent += rentprice * roomCount * diffDays * 0.50 *1.25
+
+    }
+     if (inTime >= 16 && outTime > 16.00){
+        rent += rentprice * roomCount * diffDays * 0.50 *1.50
+
+    }
+
+    }
+
+
+
+
+  
+
+
+
+
+}
 
 modalFormButton.addEventListener('click', rentcalculator)

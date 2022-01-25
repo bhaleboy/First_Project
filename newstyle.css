@@ -112,8 +112,18 @@ ul li > * {
 
 
 
+
 .answer{
-    font-family: Verdana;
+  
+    font-family:  Georgia;
+    font-weight: 10px;
+    color: seashell;
+    line-height: 40px;
+    display: inline-block;
+    text-indent: 10px;
+  
+    
+    
 }
 
 #conditonBox{
@@ -124,3 +134,21 @@ ul li > * {
     height: 300px;
     width: 450px;
 }
+
+.warning{
+color: rgb(223, 43, 43);
+font-family: 'Times New Roman';
+
+
+}
+
+.billBox{
+    position: fixed;
+    left: 1050px;
+    border-radius: 15px;
+    top: 105px;
+    width: 450px;
+    height: 450px;
+    background-color: rgba(128, 132, 173, 0.945);
+}
+

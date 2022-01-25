@@ -13,6 +13,7 @@
 </head>
 <body>
 
+
   <div id = "conditonBox">
     
     <ol>
@@ -34,8 +35,10 @@
   </div>
 
   <div class="modalform">
+    <h6 class="warning"></h6>
     <br>
     <h1 class="heading">Rent Calulator</h1> 
+   <form action=""> 
   <ul>
     <li>
         <label for="fname">First Name</label>
@@ -51,7 +54,7 @@
   </li>
   <li>
     <label for = "phone">Phone</label>
-    <input id = "phone" type="text" placeholder="Phone" />
+    <input id = "phone" type="text" placeholder="Phone" required`>
   </li>
      <li>
         <label for = "indate">Check In date</label>
@@ -59,7 +62,7 @@
     </li>
      <li>
         <label for = "outdate">Check out date</label>
-        <input id = "outdate" type="date"  />
+        <input id = "outdate" type="date" />
     </li>
     <li>
       <label for = "intime">Check In Time</label>
@@ -75,11 +78,11 @@
     </li>
     
 </ul>
-<button class ="modalformbutton">Know your rent</button>
+<button class ="modalformbutton" type="button">Know your rent</button>
 
-<div class = "answer">
-<h2> </h2>
-</div>
+</form>
+
+
 
 </div>
      
@@ -102,10 +105,17 @@
 
     </div>
 
+
+  
   </div>
+  
+
+<div class = "billBox"> <h3 class = "answer"> Your Bill will be displayed here</h3> </div>
 
 
-  <script src = "app.js"></script>l̥
+
+
+  <script src = "app.js"></script>l
   
 </body>
 </html>
