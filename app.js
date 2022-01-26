@@ -113,7 +113,7 @@ if(diffDays === 0){
     `Period of Stay: ${diffDays} Days`,
     `Check in Time : ${intime}`,
     `Check out Time : ${outtime}`,
-    `Amount to be paid : ${rent} `]
+    `Amount to be paid : ${rent} Rupees `]
     
 
 var billBody = document.querySelectorAll(".answer")
