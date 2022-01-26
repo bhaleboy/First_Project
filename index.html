@@ -36,7 +36,6 @@
 
   <div class="modalform">
     <h6 class="warning"></h6>
-    <br>
     <h1 class="heading">Rent Calulator</h1> 
    <form action=""> 
   <ul>
@@ -46,35 +45,35 @@
     </li>
      <li>
         <label for ="lname">Last Name</label>
-        <input id="lname" type="text" placeholder="Last Name"/>
+        <input id="lname" type="text" placeholder="Last Name">
     </li>
     <li>
       <label for = "mail">Email</label>
-      <input id ="mail" type="text" placeholder="Email"/>
+      <input id ="mail" type="text" placeholder="Email">
   </li>
   <li>
     <label for = "phone">Phone</label>
-    <input id = "phone" type="text" placeholder="Phone" required`>
+    <input id = "phone" type="text" placeholder="Phone" required>
   </li>
      <li>
-        <label for = "indate">Check In date</label>
-        <input id ="indate" type="date" />
+        <label for = "indate">Check In date *</label>
+        <input id ="indate" type="date">
     </li>
      <li>
-        <label for = "outdate">Check out date</label>
-        <input id = "outdate" type="date" />
+        <label for = "outdate">Check out date *</label>
+        <input id = "outdate" type="date">
     </li>
     <li>
-      <label for = "intime">Check In Time</label>
-      <input id = "intime" type="time" />
+      <label for = "intime">Check In Time *</label>
+      <input id = "intime" type="time">
     </li>
     <li>
-      <label for = "outtime">Check out Time</label>
-      <input id ="outtime" type="time" />
+      <label for = "outtime">Check out Time *</label>
+      <input id ="outtime" type="time">
     </li>
     <li>
-      <label for ="room">Number of Rooms</label>
-      <input id = "room" type="number" placeholder="Rooms"  />
+      <label for ="room">Number of Rooms*</label>
+      <input id = "room" type="number" placeholder="Rooms" min = "1" max="10"  />
     </li>
     
 </ul>
@@ -110,7 +109,18 @@
   </div>
   
 
-<div class = "billBox"> <h3 class = "answer"> Your Bill will be displayed here</h3> </div>
+<div class = "billBox"> 
+<h2 class = "answer"> Your Bill will be displayed here</h2>
+<br>
+<p class="answer"></h3>
+
+<p class="answer"></p>
+<p class="answer"></p>
+<p class="answer"></p>
+<br>
+<p class="answer"></p> 
+
+</div>
 
 
 

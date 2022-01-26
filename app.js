@@ -78,7 +78,7 @@ if(diffDays === 0){
 
     }
     //2nd
-     if (inTime > 12 && inTime < 16 && outTime >= 12.00 && outTime <=16.00 ){
+     if (inTime > 12 && inTime < 16 && outTime <= 12.00 && outTime <=16.00 ){
         rent += rentprice * roomCount * diffDays * 0.75
 
     }
@@ -108,13 +108,33 @@ if(diffDays === 0){
 
     }
 
+   var answer = [`Hello ${fname} ${lname}`,
+    `Number of Rooms booked: ${roomCount}`,
+    `Period of Stay: ${diffDays} Days`,
+    `Check in Time : ${intime}`,
+    `Check out Time : ${outtime}`,
+    `Amount to be paid : ${rent} `]
+    
 
+var billBody = document.querySelectorAll(".answer")
+ 
 
 
   
 
 
+if(inTime === '' || outTime === '' || roomCount === 0 || indate === '' || outdate === ''){
+    document.querySelector(".warning").textContent = "Please fill all the requried Inputs"
+}
 
+else{
+    document.querySelector(".warning").textContent = ""
+    for(let i = 0 ; i < billBody.length ; i++)
+    {
+        billBody[i].textContent = answer[i]
+    }
+
+}
 
 }
 

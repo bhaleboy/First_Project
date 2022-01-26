@@ -95,18 +95,25 @@ ul li > * {
 }
 
 .modalformbutton{
-    background-color: rgb(37, 111, 155);
+    background-color:#fe9f35;
     border-radius: 5px;
-    height: 35px;
+    height: 45px;
     color: whitesmoke;
     margin-left: 150px;
+    cursor: pointer;
+    line-height: 14px;
+    font-weight: 500;
+    font-family: Cambria;
 
 }
 
 .heading{
     font-family: Cambria;
-    color: lightseagreen;
+    color: #611dce;
     margin-left: 100px;
+    padding-top: 15px;
+    
+    
     
 }
 
@@ -115,7 +122,7 @@ ul li > * {
 
 .answer{
   
-    font-family:  Georgia;
+    font-family:  Cambria;
     font-weight: 10px;
     color: seashell;
     line-height: 40px;
@@ -133,11 +140,16 @@ ul li > * {
     background-color:burlywood;
     height: 300px;
     width: 450px;
+    border: mintcream;
+    border-style: solid;
 }
 
 .warning{
 color: rgb(223, 43, 43);
 font-family: 'Times New Roman';
+font-size: medium;
+margin: 0;
+
 
 
 }
@@ -146,9 +158,12 @@ font-family: 'Times New Roman';
     position: fixed;
     left: 1050px;
     border-radius: 15px;
-    top: 105px;
+    top: 100px;
     width: 450px;
     height: 450px;
     background-color: rgba(128, 132, 173, 0.945);
+    border: mintcream;
+    border-style: solid;
+    line-break: normal;
 }
 
